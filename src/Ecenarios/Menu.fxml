@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="529.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Ecenarios.MenuController">
+   <children>
+      <Pane minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="600.0">
+         <children>
+            <ImageView fitHeight="500.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Imagenes/ajedrez.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="btMostrar" layoutX="274.0" layoutY="277.0" mnemonicParsing="false" onAction="#btMostrar" text="Mostrar" />
+            <TextField fx:id="tfMostrar" layoutX="31.0" layoutY="97.0" prefHeight="58.0" prefWidth="544.0" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
