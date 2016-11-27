@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.text.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.effect.*?>
 <?import javafx.scene.image.*?>
 <?import java.lang.*?>
 <?import java.util.*?>
@@ -16,8 +19,35 @@
                   <Image url="@Imagenes/ajedrez.png" />
                </image>
             </ImageView>
-            <Button fx:id="btMostrar" layoutX="274.0" layoutY="277.0" mnemonicParsing="false" onAction="#btMostrar" text="Mostrar" />
-            <TextField fx:id="tfMostrar" layoutX="31.0" layoutY="97.0" prefHeight="58.0" prefWidth="544.0" />
+            <Button fx:id="btIniciarPartida" contentDisplay="CENTER" layoutX="54.0" layoutY="145.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#btIniciarPartida" prefHeight="60.0" prefWidth="120.0" text="Iniciar partida" textAlignment="CENTER" textFill="#d10000">
+               <effect>
+                  <Glow />
+               </effect>
+               <font>
+                  <Font name="Comic Sans MS" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="btReglasJuego" contentDisplay="CENTER" layoutX="240.0" layoutY="145.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#btReglasJuego" prefHeight="60.0" prefWidth="120.0" text="Reglas del juego" textAlignment="CENTER" textFill="#d10000">
+               <effect>
+                  <Glow />
+               </effect>
+               <font>
+                  <Font name="Comic Sans MS" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="btCreditos" contentDisplay="CENTER" layoutX="426.0" layoutY="145.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#btCreditos" prefHeight="60.0" prefWidth="120.0" text="Creditos" textAlignment="CENTER" textFill="#d10000">
+               <effect>
+                  <Glow />
+               </effect>
+               <font>
+                  <Font name="Comic Sans MS" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="btSalirJuego" layoutX="231.0" layoutY="296.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#btSalirJuego" prefHeight="50.0" prefWidth="150.0" text="Salir del juego" textAlignment="CENTER" textFill="#d10000">
+               <font>
+                  <Font name="Comic Sans MS" size="12.0" />
+               </font>
+            </Button>
          </children>
       </Pane>
    </children>

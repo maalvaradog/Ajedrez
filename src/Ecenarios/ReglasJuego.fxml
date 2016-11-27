@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="415.0" prefWidth="752.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Ecenarios.ReglasJuegoController">
+   <children>
+      <ImageView fitHeight="415.0" fitWidth="888.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Imagenes/fr.png" />
+         </image>
+      </ImageView>
+      <Text fill="#a85959" layoutX="267.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Reglas Del Juego">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <Text layoutX="28.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cada jugador dispone de 16 piezas, blancas o negras, de seis tipos distintos: ocho peones, dos torres, dos caballos, dos alfiles, una dama y un rey. Cada pieza se mueve en el tablero de forma diferente" wrappingWidth="703.44921875" />
+      <Text layoutX="28.0" layoutY="134.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1. El Rey se puede mover en cualquier dirección (vertical, horizontal y diagonales) avanzando o retrocediendo una sola casilla (excepto en el enroque)." wrappingWidth="703.44921875" />
+      <Text layoutX="28.0" layoutY="166.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2. La Dama también se puede mover en cualquier dirección avanzando o retrocediendo en el tablero el número de casillas que se desee, hasta encontrarse con otra pieza o los límites del tablero." wrappingWidth="703.44921875" />
+      <Text layoutX="28.0" layoutY="204.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3. El Alfil sólo se puede mover en dirección diagonal" wrappingWidth="703.44921875" />
+      <Text layoutX="28.0" layoutY="221.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4. La Torre sólo se puede mover en vertical y horizontal, no en diagonal" wrappingWidth="703.44921875" />
+      <Text layoutX="28.0" layoutY="238.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5. El Caballo se mueve avanzando 2 casillas en vertical y una en horizontal, o al contrario, se conoce como un movimiento en &quot;L&quot;.    Es la única pieza que puede saltar por encima de las demás." wrappingWidth="703.44921875" />
+      <Text layoutX="28.0" layoutY="272.0" strokeType="OUTSIDE" strokeWidth="0.0" text="6. El peón puede avanzar una o dos casillas en dirección vertical en su primer movimiento, después de adelantado por primera    vez sólo puede avanzar una casilla. No puede ir hacia atrás y no puede capturar las piezas contrarias que estén en su misma   dirección. El peón podrá capturar las piezas que se encuentran a una casilla en diagonal respecto a él, no a las que estén    delante de ellos (excepto en la captura de peón al paso). Un peón puede cambiarse por la pieza que su jugador desee si es    capaz de alcanzar la última fila del tablero a la de su lado." wrappingWidth="703.44921875" />
+      <Button fx:id="btVolver" layoutX="354.0" layoutY="351.0" mnemonicParsing="false" onAction="#btVolver" text="Volver">
+         <font>
+            <Font name="Comic Sans MS" size="13.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

@@ -5,7 +5,7 @@ package Clases_Java;
 // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
 // #[regen=yes,id=DCE.B635D042-6ECA-6D29-A7E0-07D85887CF9E]
 // </editor-fold> 
-public interface Piezas extends Peon, Torre, Arfill, Caballo, Rey, Reina {
+public interface Piezas extends  Torre, Arfill, Caballo, Rey, Reina {
 
     // <editor-fold defaultstate="collapsed" desc=" UML Marker "> 
     // #[regen=yes,id=DCE.F616AF67-A873-DF3D-9F3B-29882AFF882B]

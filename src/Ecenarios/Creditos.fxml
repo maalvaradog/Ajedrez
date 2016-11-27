@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="326.0" prefWidth="598.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Ecenarios.CreditosController">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Imagenes/fr.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="221.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Realizado por:">
+         <font>
+            <Font name="Comic Sans MS" size="24.0" />
+         </font>
+      </Text>
+      <Text layoutX="178.0" layoutY="103.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Milton Antonio Alvarado Gomez">
+         <font>
+            <Font name="Times New Roman" size="18.0" />
+         </font></Text>
+      <Text layoutX="168.0" layoutY="123.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Estudiante de Ingeneria de Sistemas">
+         <font>
+            <Font name="Times New Roman" size="18.0" />
+         </font></Text>
+      <Text layoutX="160.0" layoutY="196.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Materia: Paradigmas De Programacion">
+         <font>
+            <Font name="Times New Roman" size="18.0" />
+         </font></Text>
+      <Text layoutX="217.0" layoutY="217.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Profesor: Diego Olarte">
+         <font>
+            <Font name="Times New Roman" size="18.0" />
+         </font></Text>
+      <Text layoutX="195.0" layoutY="147.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Politecnico Grancolombiano">
+         <font>
+            <Font name="Times New Roman" size="18.0" />
+         </font></Text>
+      <Button fx:id="btVolver" layoutX="273.0" layoutY="254.0" mnemonicParsing="false" onAction="#btVolver" text="Volver">
+         <font>
+            <Font name="Comic Sans MS" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

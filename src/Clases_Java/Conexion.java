@@ -1,5 +1,4 @@
-    package Clases_Java;
-
+package Clases_Java;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -8,6 +7,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.LinkedList;
 import javafx.collections.ObservableList;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -19,87 +19,77 @@ import javafx.collections.ObservableList;
  * @author milto
  */
 public class Conexion {
-    
+
     private Connection conexion; //Objeto para establecer la conexion
-	private String url = "jdbc:mysql://127.0.0.1:3306/juego";//IP, base de datos
-	private String usuario = "root";
-	private String contrasena = "milton";
-	
-	public Conexion(){
-		establecerConexion();
-	}
-	
-	public Connection getConnection(){
-		return conexion;
-	}
-	
-	public void establecerConexion(){
-		try {
-			Class.forName("com.mysql.jdbc.Driver");
-			conexion = DriverManager.getConnection(url,usuario,contrasena);
-                        System.out.println("Conexion Exitosa Milton");
-		} catch (ClassNotFoundException e) {
-			e.printStackTrace();
-                        System.out.println("error conexxion"+e);
-                        
-		} catch (SQLException e) {
-			e.printStackTrace();
-		}
-	}
-	
-	public void cerrarConexion(){
-		try {
-			conexion.close();
-		} catch (SQLException e) {
-			e.printStackTrace();
-		}
-	}
-	
-	public void llenarInformacionJugador(LinkedList<Jugador> lista){
-		try {
-			Statement instruccion = conexion.createStatement();
-			ResultSet resultado = instruccion.executeQuery(
-					"SELECT idUsuarios, Nombre, Apellido, Edad, Carrera FROM juego.usuarios");
-			while(resultado.next()){
-				lista.add(
-					new Jugador (
-                                                resultado.getInt("idUsuarios"),
-						resultado.getString("Nombre"),
-                                                resultado.getString("Apellido"),
-                                                resultado.getInt("Edad"),
-						resultado.getString("Carrera")
-                                                
-					)
-				);
-                                
-			}
-		} catch (SQLException e) {
-                    System.out.println("Conexion" + e);
-			e.printStackTrace();
-		}
-	}
-        /*
-	
-	public void llenarInformacionLote(ObservableList<Lote> lista){
-		try {
-			Statement instruccion = conexion.createStatement();
-			ResultSet resultado = instruccion.executeQuery(
-					"SELECT codigo_lote, "
-					+ "lote "
-					+ "FROM tbl_lotes");
-			while(resultado.next()){
-				lista.add(
-					new Lote(
-						resultado.getInt("codigo_lote"),
-						resultado.getString("lote")
-					)
-				);
-			}
-		} catch (SQLException e) {
-			e.printStackTrace();
-		}
-	}
-	
+    private String url = "jdbc:mysql://127.0.0.1:3306/juego";//IP, base de datos
+    private String usuario = "root";
+    private String contrasena = "milton";
+
+    public Conexion() {
+        establecerConexion();
+    }
+
+    public Connection getConnection() {
+        return conexion;
+    }
+
+    public void establecerConexion() {
+        try {
+            Class.forName("com.mysql.jdbc.Driver");
+            conexion = DriverManager.getConnection(url, usuario, contrasena);
+            System.out.println("Conexion Exitosa Milton");
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+            System.out.println("error conexxion" + e);
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void cerrarConexion() {
+        try {
+            conexion.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+    
+    public void SelectInformacionJugador(LinkedList<Jugador> lista) {
+        try {
+            Statement instruccion = conexion.createStatement();
+
+            // the mysql insert statement
+            String query = "INSERT INTO juego.usuarios (Nombre,Apellido,Edad,Carrera)" +
+            "VALUES('mil','poli',20,'ing');";
+
+            // create the mysql insert preparedstatement
+            boolean a = instruccion.execute(query);
+            System.out.println(a);
+
+        } catch (SQLException e) {
+            System.out.println("Conexion" + e);
+            e.printStackTrace();
+        }
+    }
+
+    public void InsertInformacionJugador(LinkedList<Jugador> lista) {
+        try {
+            Statement instruccion = conexion.createStatement();
+
+            // the mysql insert statement
+            String query = "INSERT INTO juego.usuarios (Nombre,Apellido,Edad,Carrera)" +
+            "VALUES('"+lista.getFirst().Nombre+"','"+lista.getFirst().Apellido+"','"+lista.getFirst().Edad+"','"+lista.getFirst().Carrera+"');";
+
+            // create the mysql insert preparedstatement
+            boolean a = instruccion.execute(query);
+            System.out.println(a);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
+    /*
 	public void llenarInformacionCategorias(ObservableList<Categoria> lista){
 		try {
 			Statement instruccion = conexion.createStatement();
@@ -263,7 +253,7 @@ public class Conexion {
 			e.printStackTrace();
 		}
 	}
-*/
+     */
 
     public String llenarInformacionJugador(String Nombre) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
@@ -272,5 +262,5 @@ public class Conexion {
     public String llenarInformacionJugador() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
-    
+
 }

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="392.0" prefWidth="506.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Ecenarios.DatosJugadoresController">
+   <children>
+      <ImageView fitHeight="393.0" fitWidth="526.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Imagenes/ajedrez.png" />
+         </image>
+      </ImageView>
+      <Text fill="#ff0101" layoutX="124.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ingresar Nombres De Jugadores">
+         <font>
+            <Font name="Comic Sans MS" size="18.0" />
+         </font>
+      </Text>
+      <Label layoutX="113.0" layoutY="105.0" text="Jugador 1" textAlignment="CENTER" textFill="#ffd200">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="331.0" layoutY="105.0" text="Jugador 2" textAlignment="CENTER" textFill="#ffd200">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfNombreJ1" alignment="CENTER" layoutX="65.0" layoutY="136.0" text="Nombre">
+        
+      </TextField>
+      <TextField fx:id="tfApellidoJ1" alignment="CENTER" layoutX="65.0" layoutY="168.0" text="Apellido" />
+      <TextField fx:id="tfEdadJ1" alignment="CENTER" layoutX="65.0" layoutY="202.0" text="Edad" />
+      <TextField fx:id="tfCarreraJ1" alignment="CENTER" layoutX="65.0" layoutY="232.0" text="Carrera" />
+      <TextField fx:id="tfNombreJ2" alignment="CENTER" layoutX="287.0" layoutY="136.0" text="Nombre">
+        
+      </TextField>
+      <TextField fx:id="tfApellidoJ2" alignment="CENTER" layoutX="287.0" layoutY="168.0" text="Apellido" />
+      <TextField fx:id="tfEdadJ2" alignment="CENTER" layoutX="287.0" layoutY="202.0" text="Edad" />
+      <TextField fx:id="tfCarreraJ2" alignment="CENTER" layoutX="287.0" layoutY="232.0" text="Carrera" />
+      <Button fx:id="btJugar" layoutX="381.0" layoutY="326.0" mnemonicParsing="false" onAction="#btJugar" text="Vamos a Jugar">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btVolver" layoutX="37.0" layoutY="325.0" mnemonicParsing="false" onAction="#btVolver" prefHeight="19.0" prefWidth="87.0" text="Volver">
+         <font>
+            <Font name="Comic Sans MS" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

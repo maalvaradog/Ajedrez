@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="486.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Ecenarios.JugandoController">
+   <children>
+      <ImageView fitHeight="649.0" fitWidth="883.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Imagenes/fc.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="568.0" fitWidth="668.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Imagenes/tablero.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="360.0" fitWidth="148.0" layoutX="695.0" layoutY="62.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Imagenes/listaPiezas.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btSiguienteTurno" layoutX="39.0" layoutY="599.0" mnemonicParsing="false" onAction="#btSiguienteTurno" text="Siguiente Turno">
+         <font>
+            <Font name="Comic Sans MS" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="btVolver" layoutX="742.0" layoutY="486.0" mnemonicParsing="false" onAction="#btVolver" text="Volver">
+         <font>
+            <Font name="Comic Sans MS" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="btSalirJuego" layoutX="717.0" layoutY="441.0" mnemonicParsing="false" onAction="#btSalirJuego" text="Salir Del Juego">
+         <font>
+            <Font name="Comic Sans MS" size="12.0" />
+         </font>
+      </Button>
+      <Label layoutX="167.0" layoutY="603.0" prefHeight="18.0" prefWidth="52.0" text="Judando:" textFill="WHITE">
+         <font>
+            <Font name="Comic Sans MS" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="232.0" layoutY="603.0" prefHeight="18.0" prefWidth="158.0" text="Hola" textFill="WHITE">
+         <font>
+            <Font name="Comic Sans MS" size="12.0" />
+         </font>
+      </Label>
+      <GridPane alignment="CENTER" gridLinesVisible="true" layoutX="39.0" layoutY="33.0" minHeight="-Infinity" minWidth="-Infinity" opacity="0.76" prefHeight="528.0" prefWidth="602.0">
+        <columnConstraints>
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" prefWidth="52.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" prefWidth="52.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" prefWidth="52.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" prefWidth="52.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" prefWidth="52.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" prefWidth="52.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" prefWidth="52.0" />
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" prefWidth="52.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="46.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="46.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="46.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="46.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="46.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="46.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="46.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="46.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="bt1A" cacheHint="SCALE" contentDisplay="TOP" depthTest="ENABLE" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" onAction="#bt1A" prefHeight="0.0" prefWidth="0.0" textAlignment="CENTER" />
+            <Button fx:id="bt1B" cacheHint="SCALE" contentDisplay="TOP" depthTest="ENABLE" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" onAction="#bt1B" prefHeight="0.0" prefWidth="0.0" GridPane.columnIndex="1" />
+            <Button fx:id="bt1C" cacheHint="SCALE" contentDisplay="TOP" depthTest="ENABLE" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" onAction="#bt1C" prefHeight="0.0" prefWidth="0.0" GridPane.columnIndex="2" />
+            <Button fx:id="bt1D" cacheHint="SCALE" contentDisplay="TOP" depthTest="ENABLE" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" onAction="#bt1D" prefHeight="0.0" prefWidth="0.0" GridPane.columnIndex="3" />
+            <Button fx:id="bt1E" cacheHint="SCALE" contentDisplay="TOP" depthTest="ENABLE" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" onAction="#bt1E" prefHeight="0.0" prefWidth="0.0" GridPane.columnIndex="4" />
+            <Button fx:id="bt1F" cacheHint="SCALE" contentDisplay="TOP" depthTest="ENABLE" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" onAction="#bt1F" prefHeight="0.0" prefWidth="0.0" GridPane.columnIndex="5" />
+            <Button fx:id="bt1G" cacheHint="SCALE" contentDisplay="TOP" depthTest="ENABLE" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" onAction="#bt1G" prefHeight="0.0" prefWidth="0.0" GridPane.columnIndex="6" />
+            <Button fx:id="bt1H" cacheHint="SCALE" contentDisplay="TOP" depthTest="ENABLE" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" onAction="#bt1H" prefHeight="0.0" prefWidth="0.0" GridPane.columnIndex="7" />
+            <Button fx:id="bt2A" cacheHint="SCALE" contentDisplay="TOP" depthTest="ENABLE" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" onAction="#bt2A" prefHeight="0.0" prefWidth="0.0" GridPane.rowIndex="1" />
+            <Button fx:id="bt2B" cacheHint="SCALE" contentDisplay="TOP" depthTest="ENABLE" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" onAction="#bt2B" prefHeight="0.0" prefWidth="0.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Button fx:id="bt2C" cacheHint="SCALE" contentDisplay="TOP" depthTest="ENABLE" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" onAction="#bt2C" prefHeight="0.0" prefWidth="0.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Button fx:id="bt2D" cacheHint="SCALE" contentDisplay="TOP" depthTest="ENABLE" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" onAction="#bt2D" prefHeight="0.0" prefWidth="0.0" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+            <Button fx:id="bt2E" cacheHint="SCALE" contentDisplay="TOP" depthTest="ENABLE" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" onAction="#bt2E" prefHeight="0.0" prefWidth="0.0" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+            <Button fx:id="bt2F" cacheHint="SCALE" contentDisplay="TOP" depthTest="ENABLE" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" onAction="#bt2F" prefHeight="0.0" prefWidth="0.0" GridPane.columnIndex="5" GridPane.rowIndex="1" />
+            <Button fx:id="bt2G" cacheHint="SCALE" contentDisplay="TOP" depthTest="ENABLE" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" onAction="#bt2G" prefHeight="0.0" prefWidth="0.0" GridPane.columnIndex="6" GridPane.rowIndex="1" />
+            <Button fx:id="bt2H" cacheHint="SCALE" contentDisplay="TOP" depthTest="ENABLE" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" onAction="#bt2H" prefHeight="0.0" prefWidth="0.0" GridPane.columnIndex="7" GridPane.rowIndex="1" />
+            <Button fx:id="bt3A" cacheHint="SCALE" contentDisplay="TOP" depthTest="ENABLE" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" onAction="#bt3A" prefHeight="0.0" prefWidth="0.0" GridPane.rowIndex="2" />
+            <Button fx:id="bt3B" cacheHint="SCALE" contentDisplay="TOP" depthTest="ENABLE" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" onAction="#bt3B" prefHeight="0.0" prefWidth="0.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Button fx:id="bt3C" cacheHint="SCALE" contentDisplay="TOP" depthTest="ENABLE" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" onAction="#bt3C" prefHeight="0.0" prefWidth="0.0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <Button fx:id="bt3D" cacheHint="SCALE" contentDisplay="TOP" depthTest="ENABLE" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" onAction="#bt3D" prefHeight="0.0" prefWidth="0.0" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+            <Button fx:id="bt3E" cacheHint="SCALE" contentDisplay="TOP" depthTest="ENABLE" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" onAction="#bt3E" prefHeight="0.0" prefWidth="0.0" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+            <Button fx:id="bt3F" cacheHint="SCALE" contentDisplay="TOP" depthTest="ENABLE" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" onAction="#bt3F" prefHeight="0.0" prefWidth="0.0" GridPane.columnIndex="5" GridPane.rowIndex="2" />
+            <Button fx:id="bt3G" cacheHint="SCALE" contentDisplay="TOP" depthTest="ENABLE" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" onAction="#bt3G" prefHeight="0.0" prefWidth="0.0" GridPane.columnIndex="6" GridPane.rowIndex="2" />
+            <Button fx:id="bt3H" cacheHint="SCALE" contentDisplay="TOP" depthTest="ENABLE" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" onAction="#bt3H" prefHeight="0.0" prefWidth="0.0" GridPane.columnIndex="7" GridPane.rowIndex="2" />
+            <Button fx:id="bt4A" cacheHint="SCALE" contentDisplay="TOP" depthTest="ENABLE" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" onAction="#bt4A" prefHeight="0.0" prefWidth="0.0" GridPane.rowIndex="3" />
+            <Button fx:id="bt4B" cacheHint="SCALE" contentDisplay="TOP" depthTest="ENABLE" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" onAction="#bt4B" prefHeight="0.0" prefWidth="0.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Button fx:id="bt4C" cacheHint="SCALE" contentDisplay="TOP" depthTest="ENABLE" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" onAction="#bt4C" prefHeight="0.0" prefWidth="0.0" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <Button fx:id="bt4D" cacheHint="SCALE" contentDisplay="TOP" depthTest="ENABLE" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" onAction="#bt4D" prefHeight="0.0" prefWidth="0.0" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+            <Button fx:id="bt4E" cacheHint="SCALE" contentDisplay="TOP" depthTest="ENABLE" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" onAction="#bt4E" prefHeight="0.0" prefWidth="0.0" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+            <Button fx:id="bt4F" cacheHint="SCALE" contentDisplay="TOP" depthTest="ENABLE" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" onAction="#bt4F" prefHeight="0.0" prefWidth="0.0" GridPane.columnIndex="5" GridPane.rowIndex="3" />
+            <Button fx:id="bt4G" cacheHint="SCALE" contentDisplay="TOP" depthTest="ENABLE" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" onAction="#bt4G" prefHeight="0.0" prefWidth="0.0" GridPane.columnIndex="6" GridPane.rowIndex="3" />
+            <Button fx:id="bt4H" cacheHint="SCALE" contentDisplay="TOP" depthTest="ENABLE" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" onAction="#bt4H" prefHeight="0.0" prefWidth="0.0" GridPane.columnIndex="7" GridPane.rowIndex="3" />
+            <Button fx:id="bt5A" cacheHint="SCALE" contentDisplay="TOP" depthTest="ENABLE" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" onAction="#bt5A" prefHeight="0.0" prefWidth="0.0" GridPane.rowIndex="4" />
+            <Button fx:id="bt5B" cacheHint="SCALE" contentDisplay="TOP" depthTest="ENABLE" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" onAction="#bt5B" prefHeight="0.0" prefWidth="0.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Button fx:id="bt5C" cacheHint="SCALE" contentDisplay="TOP" depthTest="ENABLE" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" onAction="#bt5C" prefHeight="0.0" prefWidth="0.0" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+            <Button fx:id="bt5D" cacheHint="SCALE" contentDisplay="TOP" depthTest="ENABLE" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" onAction="#bt5D" prefHeight="0.0" prefWidth="0.0" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+            <Button fx:id="bt5E" cacheHint="SCALE" contentDisplay="TOP" depthTest="ENABLE" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" onAction="#bt5E" prefHeight="0.0" prefWidth="0.0" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+            <Button fx:id="bt5F" cacheHint="SCALE" contentDisplay="TOP" depthTest="ENABLE" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" onAction="#bt5F" prefHeight="0.0" prefWidth="0.0" GridPane.columnIndex="5" GridPane.rowIndex="4" />
+            <Button fx:id="bt5G" cacheHint="SCALE" contentDisplay="TOP" depthTest="ENABLE" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" onAction="#bt5G" prefHeight="0.0" prefWidth="0.0" GridPane.columnIndex="6" GridPane.rowIndex="4" />
+            <Button fx:id="bt5H" cacheHint="SCALE" contentDisplay="TOP" depthTest="ENABLE" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" onAction="#bt5H" prefHeight="0.0" prefWidth="0.0" GridPane.columnIndex="7" GridPane.rowIndex="4" />
+            <Button fx:id="bt6A" cacheHint="SCALE" contentDisplay="TOP" depthTest="ENABLE" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" onAction="#bt6A" prefHeight="0.0" prefWidth="0.0" GridPane.rowIndex="5" />
+            <Button fx:id="bt6B" cacheHint="SCALE" contentDisplay="TOP" depthTest="ENABLE" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" onAction="#bt6B" prefHeight="0.0" prefWidth="0.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <Button fx:id="bt6C" cacheHint="SCALE" contentDisplay="TOP" depthTest="ENABLE" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" onAction="#bt6C" prefHeight="0.0" prefWidth="0.0" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+            <Button fx:id="bt6D" cacheHint="SCALE" contentDisplay="TOP" depthTest="ENABLE" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" onAction="#bt6D" prefHeight="0.0" prefWidth="0.0" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+            <Button fx:id="bt6E" cacheHint="SCALE" contentDisplay="TOP" depthTest="ENABLE" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" onAction="#bt6E" prefHeight="0.0" prefWidth="0.0" GridPane.columnIndex="4" GridPane.rowIndex="5" />
+            <Button fx:id="bt6F" cacheHint="SCALE" contentDisplay="TOP" depthTest="ENABLE" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" onAction="#bt6F" prefHeight="0.0" prefWidth="0.0" GridPane.columnIndex="5" GridPane.rowIndex="5" />
+            <Button fx:id="bt6G" cacheHint="SCALE" contentDisplay="TOP" depthTest="ENABLE" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" onAction="#bt6G" prefHeight="0.0" prefWidth="0.0" GridPane.columnIndex="6" GridPane.rowIndex="5" />
+            <Button fx:id="bt6H" cacheHint="SCALE" contentDisplay="TOP" depthTest="ENABLE" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" onAction="#bt6H" prefHeight="0.0" prefWidth="0.0" GridPane.columnIndex="7" GridPane.rowIndex="5" />
+            <Button fx:id="bt7A" cacheHint="SCALE" contentDisplay="TOP" depthTest="ENABLE" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" onAction="#bt7A" prefHeight="0.0" prefWidth="0.0" GridPane.rowIndex="6" />
+            <Button fx:id="bt7B" cacheHint="SCALE" contentDisplay="TOP" depthTest="ENABLE" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" onAction="#bt7B" prefHeight="0.0" prefWidth="0.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <Button fx:id="bt7C" cacheHint="SCALE" contentDisplay="TOP" depthTest="ENABLE" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" onAction="#bt7C" prefHeight="0.0" prefWidth="0.0" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+            <Button fx:id="bt7D" cacheHint="SCALE" contentDisplay="TOP" depthTest="ENABLE" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" onAction="#bt7D" prefHeight="0.0" prefWidth="0.0" GridPane.columnIndex="3" GridPane.rowIndex="6" />
+            <Button fx:id="bt7E" cacheHint="SCALE" contentDisplay="TOP" depthTest="ENABLE" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" onAction="#bt7E" prefHeight="0.0" prefWidth="0.0" GridPane.columnIndex="4" GridPane.rowIndex="6" />
+            <Button fx:id="bt7F" cacheHint="SCALE" contentDisplay="TOP" depthTest="ENABLE" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" onAction="#bt7F" prefHeight="0.0" prefWidth="0.0" GridPane.columnIndex="5" GridPane.rowIndex="6" />
+            <Button fx:id="bt7G" cacheHint="SCALE" contentDisplay="TOP" depthTest="ENABLE" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" onAction="#bt7G" prefHeight="0.0" prefWidth="0.0" GridPane.columnIndex="6" GridPane.rowIndex="6" />
+            <Button fx:id="bt7H" cacheHint="SCALE" contentDisplay="TOP" depthTest="ENABLE" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" onAction="#bt7H" prefHeight="0.0" prefWidth="0.0" GridPane.columnIndex="7" GridPane.rowIndex="6" />
+            <Button fx:id="bt8A" cacheHint="SCALE" contentDisplay="TOP" depthTest="ENABLE" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" onAction="#bt8A" prefHeight="0.0" prefWidth="0.0" GridPane.rowIndex="7" />
+            <Button fx:id="bt8B" cacheHint="SCALE" contentDisplay="TOP" depthTest="ENABLE" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" onAction="#bt8B" prefHeight="0.0" prefWidth="0.0" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+            <Button fx:id="bt8C" cacheHint="SCALE" contentDisplay="TOP" depthTest="ENABLE" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" onAction="#bt8C" prefHeight="0.0" prefWidth="0.0" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+            <Button fx:id="bt8D" cacheHint="SCALE" contentDisplay="TOP" depthTest="ENABLE" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" onAction="#bt8D" prefHeight="0.0" prefWidth="0.0" GridPane.columnIndex="3" GridPane.rowIndex="7" />
+            <Button fx:id="bt8E" cacheHint="SCALE" contentDisplay="TOP" depthTest="ENABLE" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" onAction="#bt8E" prefHeight="0.0" prefWidth="0.0" GridPane.columnIndex="4" GridPane.rowIndex="7" />
+            <Button fx:id="bt8F" cacheHint="SCALE" contentDisplay="TOP" depthTest="ENABLE" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" onAction="#bt8F" prefHeight="0.0" prefWidth="0.0" GridPane.columnIndex="5" GridPane.rowIndex="7" />
+            <Button fx:id="bt8G" cacheHint="SCALE" contentDisplay="TOP" depthTest="ENABLE" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" onAction="#bt8G" prefHeight="0.0" prefWidth="0.0" GridPane.columnIndex="6" GridPane.rowIndex="7" />
+            <Button fx:id="bt8H" cacheHint="SCALE" contentDisplay="TOP" depthTest="ENABLE" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" onAction="#bt8H" prefHeight="0.0" prefWidth="0.0" GridPane.columnIndex="7" GridPane.rowIndex="7" />
+         </children>
+        
+      </GridPane>
+   </children>
+</AnchorPane>
